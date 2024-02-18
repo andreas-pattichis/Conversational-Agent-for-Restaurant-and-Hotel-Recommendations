@@ -4,7 +4,7 @@
   <img src="https://bodyswitch.com.au/wp-content/uploads/2022/08/nlp-logo.png" width="200" alt="Conversational Agent">
 </p>
 
-This repository contains the code and research developed for our Conversational Agent (CA) project, as the final project of our coursework in the Natural Language Interfaces (NLI) class within the EMAI's Master's degree program. The purpose of the project was to implement the components (most of them fully, a few only partially) of an interactive Conversational Agent (CA) to recommend restaurants and hotels using data from the multiwoz dataset from Hugging Face 🤗. The objective of the CA is mainly to recommend and book hotels and restaurants as requested per the user.
+This repository contains the code and research developed for our Conversational Agent (CA) project, as the final project of our coursework in the Natural Language Interaction (NLI) class within the EMAI's Master's degree program. The purpose of the project was to implement the components (most of them fully, a few only partially) of an interactive Conversational Agent (CA) to recommend restaurants and hotels using data from the multiwoz dataset from Hugging Face 🤗. The objective of the CA is mainly to recommend and book hotels and restaurants as requested per the user.
 
 ---
 
