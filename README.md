@@ -1,56 +1,50 @@
-# NLI_Project
-This repository contains the code and research developed for the final project of the NLI class of the EMAI's Master's degree. The purpose of the project was to implement the components (most of them fully, a few only partially) of an interactive Conversational Agent (CA) to recommend restaurants and hotels using data from the multiwoz dataset. The objective of the CA is mainly to recommend and book hotels and restaurants as requested per the user.
+# Conversational Agent for Restaurant and Hotel Recommendations
 
-The code contains three major components:
+![Conversational Agent](https://bodyswitch.com.au/wp-content/uploads/2022/08/nlp-logo.png)
 
-- **Dialogue act identification**: This task consists on prediction the DA of the written utterances of a user in order to guide the CA in identifying the main ideas the user is communicating.
-- **Information extraction** (a.k.a slot filling): This task consists of the extraction of information from the written utterances of a user. To do so it uses a series of domain specific slots which are used to categorize the information provided by the user.
-- **Planning**: This part of the assignment consists on the three following subtasks related to planning a response to the user from the information given and requested by the user:
-  - **Information retrieval**: This tasks consists on identifying from the previous utterances of a dialogue the slots that need to be retrieved by the agent. Since we didn't have full access to a database of hotel, it was decided to just plan the information that should be looked for (e.g the parameters of the query to a possible database of hotel and/or restaurants).
-  - **DA prediction**: This tasks consists on predicting the DA the agent should response to the user with.
-  - **To be requested**: This tasks consists of identifying the missing information the agent should require to the user in order to complete its task.
+Welcome to the repository for our Conversational Agent (CA) project, a cornerstone of our coursework in the Natural Language Interfaces (NLI) class within the EMAI's Master's degree program. Our team has dedicated itself to crafting an interactive CA capable of recommending and booking restaurants and hotels. This innovative solution leverages the comprehensive MultiWOZ dataset to deliver a seamless user experience.
 
-# Contents
+## Project Overview
 
-The following's a list with the contest of the repository:
+![MultiWOZ Dataset](https://static.observablehq.com/assets/customer_stories/huggingface/huggingface-logo.png)
 
-- **agent.py**: interactive python application to interact with the conversational agent
+The development of our Conversational Agent focused on three critical components, each contributing to the agent's ability to understand, process, and respond to user requests effectively. These components include:
 
-- **classification/**: Folder containing all the code and training notebooks of user and agent DA prediction.
+- **Dialogue Act Identification**: A predictive model that analyzes user utterances to identify the Dialogue Act (DA), guiding the CA in recognizing the user's intentions and main ideas.
 
-- **slot_extraction/**: Folder containing all the code and training notebooks of the two approaches to the slot filling task.
+- **Information Extraction (Slot Filling)**: This process involves extracting pertinent information from user utterances using domain-specific slots. These slots categorize the user-provided data, facilitating accurate response generation.
 
-- **info_to_be_retrieved.py**: Module containing the code for the information retrieval task.
+- **Planning**: Our planning module is subdivided into three tasks, each designed to optimize the CA's response strategy based on user input:
+  - **Information Retrieval**: Identifies the necessary information to be retrieved based on previous dialogue, planning queries for potential databases.
+  - **DA Prediction**: Predicts the appropriate Dialogue Act the agent should use in response to the user.
+  - **To be Requested**: Determines what additional information is required from the user to fulfill their request effectively.
 
-- **info_to_be_retrieved/**: Folder containing the training script and results of the information retrieval task.
+## Repository Contents
 
-- **info_to_be_requested.py**: Module containing the code for the task of requesting information to the user.
+This repository is organized to provide a comprehensive overview of our project's components, including code, training notebooks, and evaluation results:
 
-- **info_to_be_requested/**: Folder containing the training script for the info to be requested task.
+- `agent.py`: An interactive Python application for interfacing with the CA.
+- `classification/`: Contains code and training notebooks for both user and agent Dialogue Act prediction.
+- `slot_extraction/`: Hosts the code and training notebooks for our innovative slot filling approaches.
+- `info_to_be_retrieved.py`: The module dedicated to the information retrieval task.
+- `info_to_be_requested.py`: Implements the functionality for requesting additional information from the user.
+- `dataset1.hf`: The MultiwoZ Dataset, the backbone of our training and evaluation processes.
+- `NLI_notebook_for_project_evaluation_EMAI_(task_3_updated).ipynb`: The latest evaluation notebook, showcasing the integration of our modules and the refinement of metrics calculation.
+- `NLI Final Presentation Report.pdf`: A comprehensive slide presentation detailing the entirety of our project.
 
-- **dataset1.hf**: Multiwoz Dataset.
+## Results and Evaluations
 
-- **NLI_notebook_for_project_evaluation_EMAI_(task_3_updated).ipynb**: Last version of the evaluation notebook adapted to use all the modules implemented for the task, as well as for removing the question identification slots (slots with the value '?') from the metrics calculation.
+![BERT Logo](https://www.tengoldenrules.com/wp-content/uploads/Screen-Shot-2021-11-22-at-10.14.51-AM.png)
 
-- **NLI Final Presentation Report.pdf**: Slide presentation of the whole project.
+Our project's outcomes are documented in several key files within this repository, offering insights into the training and performance of our models:
 
-# Results
-
-The results are contained in the following files, which also contain the training code of the models:
-
-- **User Dialogue Act Prediction**
-  - classification/da_prediction.ipynb
-
+- **User Dialogue Act Prediction**: `classification/da_prediction.ipynb`
 - **Slot Filling**:
-  - NER approach (NER scores training and validation): slot_extraction/ner_approach/all_resuts.json
-  - NER approach (global results): slot_extraction/ner_approach/ner_approach.ipynb
-  - Similarity approach: slot_extraction/similarity_approach/similarity_approach.ipynb
+  - NER approach: `slot_extraction/ner_approach/all_results.json` and `slot_extraction/ner_approach/ner_approach.ipynb`
+  - Similarity approach: `slot_extraction/similarity_approach/similarity_approach.ipynb`
+- **Information to be Retrieved**: `info_to_be_retrieved/Evaluation_Model.ipynb`
+- **Agent Dialogue Act Prediction**: `classification/context_classifier.ipynb`
+- **Information to be Requested**: `info_to_be_requested/train_info_to_be_requested_training.ipynb`
 
-- **Information to be Retrieved**:
-  - info_to_be_retrieved/Evaluation_Model.ipynb
+We invite you to explore our repository to gain a deeper understanding of the intricate work that went into developing this Conversational Agent. Our project stands as a testament to the collaborative effort, innovative application of NLI principles, and dedication to advancing the field of conversational AI.
 
-- **Agent Dialogue Act Prediction**
-  - classification/context_classifier.ipynb
-
-- **Information to be Retrieved**
-  - info_to_be_requested/train_info_to_be_requested_training.ipynb
