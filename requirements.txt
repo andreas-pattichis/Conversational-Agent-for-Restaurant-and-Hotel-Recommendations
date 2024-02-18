@@ -1,0 +1,9 @@
+transformers==4.35.1
+datasets==2.14.6
+compress-fasttext==0.1.4
+torch==2.1.1
+torchaudio==2.1.1
+torchvision==0.16.1
+textblob
+nltk
+spacy
