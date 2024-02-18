@@ -6,6 +6,8 @@
 
 This repository contains the code and research developed for our Conversational Agent (CA) project, as the final project of our coursework in the Natural Language Interfaces (NLI) class within the EMAI's Master's degree program. The purpose of the project was to implement the components (most of them fully, a few only partially) of an interactive Conversational Agent (CA) to recommend restaurants and hotels using data from the multiwoz dataset from Hugging Face 🤗. The objective of the CA is mainly to recommend and book hotels and restaurants as requested per the user.
 
+---
+
 ## Project Overview
 
 The development of our Conversational Agent focused on three critical components, each contributing to the agent's ability to understand, process, and respond to user requests effectively. These components include:
@@ -19,6 +21,8 @@ The development of our Conversational Agent focused on three critical components
   - **DA Prediction**: Predicts the appropriate Dialogue Act the agent should use in response to the user.
   - **To be Requested**: Determines what additional information is required from the user to fulfill their request effectively.
 
+---
+
 ## Repository Contents
 
 This repository is organized to provide a comprehensive overview of our project's components, including code, training notebooks, and evaluation results:
@@ -30,6 +34,8 @@ This repository is organized to provide a comprehensive overview of our project'
 - `info_to_be_requested.py`: Implements the functionality for requesting additional information from the user.
 - `dataset1.hf`: The MultiwoZ Dataset, the backbone of our training and evaluation processes.
 - `NLI_notebook_for_project_evaluation_EMAI_(task_3_updated).ipynb`: The latest evaluation notebook, showcasing the integration of our modules and the refinement of metrics calculation.
+
+---
 
 ## Results and Evaluations
 
